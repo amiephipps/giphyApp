@@ -1,13 +1,25 @@
 // imports
-@import "./initializers/variables";
-@import "./initializers/grid";
-@import "./initializers/combo";
+@import "./variables";
+@import "./grid";
+@import "./combo";
+@import "./utilities";
 
 html {
   font-size: 62.5%;
 }
 
+html,
+body,
+ul {
+  margin:  0;
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+.grid {
+  width: 400px;
 }
