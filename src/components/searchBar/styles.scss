@@ -1,0 +1,25 @@
+@import "../../global/scss/_variables.scss";
+
+.searchBar {
+  &-input {
+    max-width: 600px;
+    border-radius: 5px;
+    width: 70%;
+    border: 1px solid $paleGrey;
+    padding: 25px;
+    margin: 50px auto;
+    display: block;
+    font-size: 16px;
+    color: $twilightGrey;
+    transition: 0.5s all;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $twilightGrey;
+    }
+
+    &::placeholder {
+      color: $paleGrey;
+    }
+  }
+}

@@ -1,11 +1,16 @@
 // imports
 @import "./variables";
+@import "./mixins";
 @import "./grid";
 @import "./combo";
 @import "./utilities";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
 html,
@@ -20,6 +25,9 @@ img {
   max-width: 100%;
 }
 
-.grid {
-  width: 400px;
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }

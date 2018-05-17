@@ -1,5 +1,5 @@
 const API_KEY = 'aii23rhip1BPzTRUgKGOnYjsQsj17Kk3'
-const LIMIT = 50
+const LIMIT = 12
 
 const Util = {}
 
@@ -9,7 +9,7 @@ Util.searchGifs = (searchTerm = '', gifLimit = LIMIT) => {
 }
 
 Util.searchTrendingGifs = (gifLimit = LIMIT) => {
-  return fetch(`api.giphy.com/v1/gifs/trending${gifLimit}`)
+  return fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=${gifLimit}`)
   .then(res => res.json())
 }
 
