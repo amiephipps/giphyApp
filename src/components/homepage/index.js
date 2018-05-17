@@ -118,7 +118,6 @@ class Homepage extends React.Component {
       <div className='grid'>
         {this.state[gifType].map(gif => {
           return <div key={gif.id} className='grid-1of3'>
-
             <SingleGif {...gif} upvoteGif={this.upvoteGif} />
           </div>
         })}
@@ -130,7 +129,7 @@ class Homepage extends React.Component {
     return (
       <div className='homepage container'>
         <h1 className='u-alignCenter'>Giphalicious</h1>
-        <p className='u-alignCenter'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor accusamus atque itaque, vitae, laboriosam iure culpa incidunt temporibus! Fuga repellendus voluptatibus nisi beatae suscipit! Consequuntur cumque nobis magni iusto omnis expedita quidem voluptates doloremque incidunt earum odit voluptatum quasi, praesentium aspernatur ipsum, pariatur impedit, architecto vel eum, voluptate? Nobis.</p>
+        <p className='u-alignCenter'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor accusamus atque itaque, vitae, laboriosam iure culpa incidunt temporibus! Fuga repellendus voluptatibus nisi beatae suscipit!</p>
         <SearchBar searchGifs={this.searchGifs} />
         <p className='homepage-sortLabel'>Sort By:
         {this.state.sortOptions.map(option => {
